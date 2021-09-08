@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom"
 import "./TopBar.css"
 
 export const TopBar = () => {
     return (
         <div class='top'>
             <div className="topLeft">
-               <h1 className="topLogo"><i class="fas fa-newspaper"></i> Dhaka News</h1>
+               <h1 className="topLogo">
+                    <Link className="TopListLink" to="/"> <i class="fas fa-newspaper"></i>  Dhaka News</Link> 
+                </h1>
             </div>
             <div className="topCenter">
                 <ul className="topList">
                     <li className="topListItem">
-                        Home
+                        <Link className="TopListLink" to="/home">Home</Link>
                     </li>
                     <li className="topListItem">
                         About
@@ -18,7 +21,7 @@ export const TopBar = () => {
                         Contact
                     </li>
                     <li className="topListItem">
-                        Write
+                        <Link className="TopListLink" to="/write">Write</Link>
                     </li>
                     <li className="topListItem">
                         Logout
