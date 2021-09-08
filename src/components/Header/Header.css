@@ -1,0 +1,23 @@
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headerTitleContentLr{
+    position: absolute;
+    top: 30%;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+    font-family: "Poppins";
+}
+.headerTitleContentSm{
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    color: rgb(236, 234, 234);
+}
+
+.HeaderImgContent{
+    width: 100%;
+}
